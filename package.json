@@ -1,0 +1,19 @@
+{
+  "name": "remix-cloudflare-template",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev --parallel",
+    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,md,yml}\"",
+    "lint": "turbo run lint",
+    "setup": "node -r esbuild-register scripts/setup.ts",
+    "typecheck": "turbo run typecheck"
+  },
+  "devDependencies": {
+    "esbuild-register": "^3.3.3",
+    "prettier": "latest",
+    "prettier-plugin-tailwindcss": "^0.1.11",
+    "turbo": "latest"
+  }
+}

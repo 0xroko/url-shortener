@@ -1,0 +1,25 @@
+{
+  "name": "worker",
+  "version": "0.0.0",
+  "license": "MIT",
+  "scripts": {
+    "dev": "wrangler dev --config wrangler.dev.toml --env dev --local",
+    "lint": "eslint .",
+    "typecheck": "tsc -b"
+  },
+  "dependencies": {
+    "@cloudflare/kv-asset-handler": "^0.2.0",
+    "@remix-run/cloudflare": "^1.4.3",
+    "counter-do": "workspace:*",
+    "remix-app": "workspace:*"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^3.10.0",
+    "cloudflare-env": "workspace:*",
+    "eslint": "^8.15.0",
+    "eslint-config-custom": "workspace:*",
+    "tsconfig": "workspace:*",
+    "typescript": "^4.6.4",
+    "wrangler": "^2.0.5"
+  }
+}
