@@ -24,8 +24,8 @@ export let meta: MetaFunction = () => ({
 
 export let links: LinksFunction = () => [{ rel: 'stylesheet', href: styles }]
 
-export let loader: LoaderFunction = async ({ context }) => {
-  return json<LoaderData>({ 23: 2 })
+export let loader: LoaderFunction = async ({}) => {
+  return json<any>({ sd: 2 })
 }
 
 export default function App() {

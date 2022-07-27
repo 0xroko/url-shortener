@@ -11,7 +11,7 @@ declare var process: {
 
 declare module '@remix-run/cloudflare' {
   import type { DataFunctionArgs as RemixDataFunctionArgs } from '@remix-run/cloudflare'
-  export * from '@remix-run/cloudflare/index'
+  export * from '@remix-run/cloudflare/dist'
 
   interface DataFunctionArgs extends Omit<RemixDataFunctionArgs, 'context'> {
     context: LoadContext
