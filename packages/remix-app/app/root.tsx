@@ -25,12 +25,7 @@ export let meta: MetaFunction = () => ({
 export let links: LinksFunction = () => [{ rel: 'stylesheet', href: styles }]
 
 export let loader: LoaderFunction = async ({ context }) => {
-  let id = context.env.COUNTER.idFromName('root')
-  let object = context.env.COUNTER.get(id)
-  let doResponse = await object.fetch('https://../increment')
-  let count = Number(await doResponse.text())
-
-  return json<LoaderData>({ count })
+  return json<LoaderData>({ 23: 2 })
 }
 
 export default function App() {
