@@ -15,7 +15,7 @@
     "typecheck": "tsc -b"
   },
   "dependencies": {
-    "@remix-run/cloudflare": "^1.5.1",
+    "@remix-run/cloudflare": "^1.6.5",
     "@remix-run/react": "^1.5.1",
     "react": "^18.1.0",
     "react-dom": "^18.1.0"
