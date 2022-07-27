@@ -16,11 +16,16 @@ jobs:
       - name: ⬇️ Checkout repo
         uses: actions/checkout@v3
 
-      - name: 📥 Install deps
-        uses: bahmutov/npm-install@v1
+      - uses: pnpm/action-setup@v2.2.2
+        with:
+          version: 6.0.2
+          run_install: |
+            - recursive: true
+              # args: [--frozen-lockfile, --strict-peer-dependencies]
+            # - args: [--global, gulp, prettier, typescript]
 
       - name: 📦 Build
-        run: npm run build
+        run: pnpm run build
 
       - name: 🚀 Publish
         uses: cloudflare/wrangler-action@2.0.0
