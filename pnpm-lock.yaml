@@ -47,21 +47,27 @@ importers:
       '@remix-run/react': ^1.5.1
       '@types/react': ^18.0.9
       '@types/react-dom': ^18.0.4
+      classnames: ^2.3.1
       cloudflare-env: workspace:*
       concurrently: ^7.2.1
       eslint: ^8.15.0
       eslint-config-custom: workspace:*
+      iconoir-react: ^5.1.4
       npm-run-all: ^4.1.5
       react: ^18.1.0
       react-dom: ^18.1.0
       tailwindcss: ^3.0.24
       tsconfig: workspace:*
       typescript: ^4.6.4
+      zod: ^3.17.10
     dependencies:
       '@remix-run/cloudflare': 1.6.5_gwhqvtcy67gag3owlzeoeoumza
       '@remix-run/react': 1.6.5_biqbaboplfbrettd7655fr4n2y
+      classnames: 2.3.1
+      iconoir-react: 5.1.4_react@18.2.0
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
+      zod: 3.17.10
     devDependencies:
       '@cloudflare/workers-types': 3.14.1
       '@remix-run/dev': 1.6.5_biqbaboplfbrettd7655fr4n2y
@@ -2757,6 +2763,10 @@ packages:
       static-extend: 0.1.2
     dev: true
 
+  /classnames/2.3.1:
+    resolution: {integrity: sha512-OlQdbZ7gLfGarSqxesMesDa5uz7KFbID8Kpq/SxIoNGDqY8lSYs0D+hhtBXhcdB3rcbXArFr7vlHheLk1voeNA==}
+    dev: false
+
   /clean-stack/2.2.0:
     resolution: {integrity: sha512-4diC9HaTE+KRAMWhDhrGOECgWZxoevMc5TlkObMqNSsVU62PYzXZ/SMTjzyGAFF1YusgxGcSWTEXBhp0CPwQ1A==}
     engines: {node: '>=6'}
@@ -4624,6 +4634,14 @@ packages:
       quick-lru: 5.1.1
       resolve-alpn: 1.2.1
     dev: true
+
+  /iconoir-react/5.1.4_react@18.2.0:
+    resolution: {integrity: sha512-8dBxsn4OHVlF1W4coH1kcLfWrsgPq/55DBoWDEnIhrP9X9DXW3bwX/Uamo9xbVnMfwhLqMnYto6dA8d08l+3yA==}
+    peerDependencies:
+      react: ^16.8.6 || ^17 || ^18
+    dependencies:
+      react: 18.2.0
+    dev: false
 
   /iconv-lite/0.4.24:
     resolution: {integrity: sha512-v3MXnZAcvnywkTUEZomIActle7RXXeedOR31wwl7VlyoXO4Qi9arvSenNQWne1TcRwhCL1HwLI21bEqdpj8/rA==}
@@ -7987,6 +8005,10 @@ packages:
       mustache: 4.2.0
       stack-trace: 0.0.10
     dev: true
+
+  /zod/3.17.10:
+    resolution: {integrity: sha512-IHXnQYQuOOOL/XgHhgl8YjNxBHi3xX0mVcHmqsvJgcxKkEczPshoWdxqyFwsARpf41E0v9U95WUROqsHHxt0UQ==}
+    dev: false
 
   /zwitch/2.0.2:
     resolution: {integrity: sha512-JZxotl7SxAJH0j7dN4pxsTV6ZLXoLdGME+PsjkL/DaBrVryK9kTGq06GfKrwcSOqypP+fdXGoCHE36b99fWVoA==}
