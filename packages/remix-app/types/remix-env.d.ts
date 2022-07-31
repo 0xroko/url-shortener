@@ -17,11 +17,22 @@ declare module '@remix-run/cloudflare' {
     context: LoadContext
   }
 
+  export type ActionArgs = DataFunctionArgs
+  export type LoaderArgs = DataFunctionArgs
+
   export interface ActionFunction {
-    (args: DataFunctionArgs): null | Response | Promise<Response>
+    (args: DataFunctionArgs):
+      | Promise<Response>
+      | Response
+      | Promise<AppData>
+      | AppData
   }
 
   export interface LoaderFunction {
-    (args: DataFunctionArgs): null | Response | Promise<Response>
+    (args: DataFunctionArgs):
+      | Promise<Response>
+      | Response
+      | Promise<AppData>
+      | AppData
   }
 }
