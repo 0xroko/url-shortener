@@ -2,6 +2,3 @@ type = 'javascript'
 compatibility_date = '2022-05-22'
 main = 'src/index.ts'
 name = 'url-shortener'
-
-[site]
-bucket = '../remix-app/public'
