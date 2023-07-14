@@ -9,6 +9,7 @@ export default function handleRequest(
   remixContext: EntryContext,
 ) {
   let markup = renderToString(
+    // @ts-ignore
     <RemixServer context={remixContext} url={request.url} />,
   );
 

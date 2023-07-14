@@ -54,5 +54,6 @@ jobs:
           ACCESS_KEY: ${{ secrets.ACCESS_KEY }}
           DISSALLOWED_DOMAINS: ${{ secrets.DISSALLOWED_DOMAINS }}
           APP_URL: ${{secrets.APP_URL }}
-          CF_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           KV_NAMESPACE_ID: ${{ secrets.KV_NAMESPACE_ID }}

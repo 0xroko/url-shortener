@@ -13,7 +13,7 @@ import { Toast } from './Toast';
 
 export const Form = () => {
   const transition = useTransition();
-  const actionData = useActionData<ActionReturnType>();
+  const actionData = useActionData<Awaited<ActionReturnType>>();
 
   const formRef = useRef<HTMLFormElement>(null);
 
