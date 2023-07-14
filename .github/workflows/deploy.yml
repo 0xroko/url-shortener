@@ -41,11 +41,9 @@ jobs:
         with:
           apiToken: ${{ secrets.CF_API_TOKEN }}
           preCommands: |
-            apt-get update && apt-get install -y jq
-            export KV_NAMESPACE_ID=$(wrangler kv:namespace list | jq -c 'map(select(.title | contains("URLS")))' | jq -r ".[0].id")
             echo "kv_namespaces = [{binding=\"URLS\", id=\"${KV_NAMESPACE_ID}\"}]" >> wrangler.toml
-            echo "[site]" >> wrangler.toml
-            echo "bucket = '../remix-app/public'" >> wrangler.toml
+            # echo "[site]" >> wrangler.toml
+            # echo "bucket = '../remix-app/public'" >> wrangler.toml
           secrets: |
             ACCESS_KEY
             DISSALLOWED_DOMAINS
@@ -56,4 +54,5 @@ jobs:
           ACCESS_KEY: ${{ secrets.ACCESS_KEY }}
           DISSALLOWED_DOMAINS: ${{ secrets.DISSALLOWED_DOMAINS }}
           APP_URL: ${{secrets.APP_URL }}
-          CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          KV_NAMESPACE_ID: ${{ secrets.KV_NAMESPACE_ID }}
