@@ -54,7 +54,7 @@ jobs:
       - name: 🏗 Setup pnpm
         uses: pnpm/action-setup@v2
         with:
-          version: 7.8.0
+          version: 8.6.6
           run_install: false
 
       - name: 🏗 Setup node
@@ -84,13 +84,13 @@ jobs:
       - name: 🏗 Setup pnpm
         uses: pnpm/action-setup@v2
         with:
-          version: 7.8.0
+          version: 8.6.6
           run_install: false
 
       - name: 🏗 Setup node
         uses: actions/setup-node@v3
         with:
-          node-version: "14"
+          node-version: "18"
           cache: "pnpm"
 
       - name: ⬇ Install
