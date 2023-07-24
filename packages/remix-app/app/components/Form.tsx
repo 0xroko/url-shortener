@@ -88,7 +88,7 @@ export const Form = () => {
                 disabled={transition.state === 'submitting'}
                 type='submit'
               >
-                {transition.state === 'submitting' ? 'Creating...' : 'Create'}
+                {transition.state === 'submitting' ? 'Adding...' : 'Add'}
               </Button>
             </div>
           </fieldset>
