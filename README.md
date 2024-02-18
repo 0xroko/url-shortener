@@ -1,5 +1,5 @@
 <p align="center">
-<img src=".github/sc.jpg">
+<img src=".github/sc.png">
 <br>
 <i>s.roko.foo - Personal url shortener</i>
 </p>
