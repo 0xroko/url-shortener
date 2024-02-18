@@ -1,21 +1,36 @@
 {
-  "name": "remix-cloudflare-template",
-  "version": "0.0.0",
+  "name": "app",
+  "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
-    "build": "turbo run build",
-    "dev": "turbo run dev --parallel",
-    "start:test": "turbo run start:test",
-    "test": "turbo run test",
-    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,md,yml}\"",
-    "lint": "turbo run lint",
-    "setup": "node -r esbuild-register scripts/setup.ts",
-    "typecheck": "turbo run typecheck"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@radix-ui/react-toast": "^1.1.5",
+    "@vercel/kv": "^1.0.1",
+    "classnames": "^2.5.1",
+    "dotenv": "^16.4.4",
+    "iconoir-react": "^7.4.0",
+    "next": "14.1.0",
+    "react": "^18",
+    "react-dom": "^18",
+    "zod": "^3.22.4"
   },
   "devDependencies": {
-    "esbuild-register": "^3.3.3",
-    "prettier": "latest",
-    "prettier-plugin-tailwindcss": "^0.1.11",
-    "turbo": "latest"
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "autoprefixer": "^10.0.1",
+    "eslint": "^8",
+    "eslint-config-next": "14.1.0",
+    "postcss": "^8",
+    "prettier": "^3.2.5",
+    "prettier-plugin-tailwindcss": "^0.5.11",
+    "tailwindcss": "^3.3.0",
+    "typescript": "^5"
   }
 }
